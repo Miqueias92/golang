@@ -1,18 +1,23 @@
 # golang
 
-## installation guide
+### installation guide
 
 https://go.dev/doc/install
 
-## run 
+### run 
 ` 
  go run hello-world/hello.go
 `
 
-### build
+### build Linux/MacOS
 ` 
  go build hello-word/hello.go
 ` 
+
+### build Windows
+`
+GOOS=windows go build hello-word/hello.go
+`
 
 ### run builded file
 `
@@ -20,7 +25,6 @@ https://go.dev/doc/install
 `
 
 ### create a module
-
 `
   go mod init [module_name]     
 `
@@ -35,8 +39,21 @@ https://go.dev/doc/install
  ./[module_name]   
 `
 
-## install packages
-
+### install packages
 `
 go get github.com/google/uuid
 `
+
+---
+
+### Variables
+
+```
+  * declare type 
+  var name string = "Miqueias"
+
+  * infer type 
+  
+  var middleName = "Santos"
+  lastName := "Sousa"
+```
